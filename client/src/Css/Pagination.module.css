@@ -15,18 +15,18 @@
   
  
   
-  @media (max-width: 767px) {
-    .pagination_button {
-      padding: 8px 16px;
-      font-size: 14px;
-    }
-  
-    .pagination_buttonprevious::before,
-    .pagination_buttonnext::after {
-      width: 8px;
-      height: 8px;
-      border-width: 1px;
-      margin-right: 3px;
-    }
+@media (max-width: 767px) {
+  .pagination_button {
+    padding: 8px 16px;
+    font-size: 14px;
   }
+
+  .pagination_buttonprevious::before,
+  .pagination_buttonnext::after {
+    width: 8px;
+    height: 8px;
+    border-width: 1px;
+    margin-right: 3px;
+  }
+}
   
