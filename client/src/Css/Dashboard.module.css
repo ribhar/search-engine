@@ -18,15 +18,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  /* justify-items: center; */
-  /* width: 100%; */
-  /* margin: 20px auto;
-   */
 }
 
-/* .container > div {
-  margin-top: 20px;
-} */
 
 @media (min-width: 481px) and (max-width: 767px) {
     .container {
