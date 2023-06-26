@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import style from "../Css/Search.module.css";
 
 const SearchandSort = ({ setSearchTerm, setSortBy, sortBy }) => {
-  const [search, setSearch] = React.useState("");
+  const [search, setSearch] = useState("");
   const handleSearch = (event) => {
     setSearch(event.target.value);
   };
