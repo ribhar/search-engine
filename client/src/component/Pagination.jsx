@@ -1,6 +1,3 @@
-
-// export default Pagination;
-
 import React from 'react';
 import style from "../Css/Pagination.module.css";
 
