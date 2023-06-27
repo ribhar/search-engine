@@ -1,4 +1,4 @@
-
+/* Search and Sort Container */
 .searchSortContainer {
   margin: 20px; 
   width: 100%; 
@@ -6,67 +6,73 @@
   margin-right: auto;
 }
 
+/* Grid Container */
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
-/* Search bar css */
-
+/* Search Button */
 .search_button {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #3498db;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .search-button:hover {
-    background-color: #2980b9;
-  }
-  
-  .search_button:focus {
-    outline: none;
-  }
-  
-  .search_button:active {
-    background-color: #1e67a8;
-  }
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
 
-  .paginationContainer {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    margin-top: 10px;
-  }
+/* Search Button Hover Effect */
+.search_button:hover {
+  background-color: #2980b9;
+}
 
-  
+/* Search Button Focus Effect */
+.search_button:focus {
+  outline: none;
+}
+
+/* Search Button Active Effect */
+.search_button:active {
+  background-color: #1e67a8;
+}
+
+/* Pagination Container */
+.paginationContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
 @media (min-width: 481px) and (max-width: 767px) {
+  /* Adjust Grid Columns for Medium Screens */
   .container {
-      grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
+  /* Adjust Grid Columns for Small Screens */
   .container {
-      grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media (max-width: 767px) {
+  /* Adjust Body Font Size for Small Screens */
   body {
-      font-size: 12px;
+    font-size: 12px;
   }
 
+  /* Adjust Pagination Container Justify Content for Small Screens */
   .paginationContainer {
     justify-content: center;
-    
   }
 }
-  

@@ -1,6 +1,9 @@
-.tablecontainer{
-    /* border: 1px solid red; */
+/* Table Container Styles */
+.tablecontainer {
+  /* border: 1px solid red; */
 }
+
+/* Table 1 Styles */
 .table1 {
   width: 100%;
   border-collapse: collapse;
@@ -9,6 +12,8 @@
   margin-top: 3rem;
   display: none;
 }
+
+/* Table 2 Styles */
 .table2 {
   width: 100%;
   border-collapse: collapse;
@@ -18,41 +23,44 @@
   display: table;
 }
 
-.table1 th{
+/* Table Header Cell Styles - Table 1 */
+.table1 th {
   padding: 12px;
   text-align: left;
   border-bottom: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-} 
-.table1 td
-{
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-  /* border-right: 1px solid #ddd; */
-}
-.table2 th, .table2 td {
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #ddd; 
   border-right: 1px solid #ddd;
 }
 
-/* .table1 th:first-child, 
-.table1 td:first-child {
-  border-left: 1px solid #ddd;
-}  */
+/* Table Data Cell Styles - Table 1 */
+.table1 td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Table Header and Data Cell Styles - Table 2 */
+.table2 th,
+.table2 td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+/* First Child Cell Styles - Table 2 */
 .table2 th:first-child,
-  .table2 td:first-child {
+.table2 td:first-child {
   border-left: 1px solid #ddd;
 }
 
-.table1 th{
+/* Table Header Styles - Table 1 */
+.table1 th {
   background-color: #f7f7f7;
   font-weight: bold;
   text-transform: uppercase;
-  /* font-size: 12px; */
-} 
+}
+
+/* Table Header Styles - Table 2 */
 .table2 th {
   background-color: #f7f7f7;
   font-weight: bold;
@@ -62,15 +70,19 @@
   border-bottom: 2px solid #ddd;
 }
 
-.table1 td, .table2 td {
-  /* font-size: 12px; */
+/* Table Data Cell Styles - Both Tables */
+.table1 td,
+.table2 td {
   vertical-align: middle;
 }
 
-.table1 tr:hover, .tabl2 tr:hover {
+/* Table Row Hover Styles */
+.table1 tr:hover,
+.tabl2 tr:hover {
   background-color: #f5f5f5;
 }
 
+/* Table Image Styles */
 .table_image {
   width: 60px;
   height: 60px;
@@ -79,6 +91,7 @@
   border: 2px solid #ddd;
 }
 
+/* Table Title Styles */
 .table_title {
   font-weight: bold;
   font-size: 16px;
@@ -86,31 +99,29 @@
   text-align: left;
 }
 
+/* Table Description Styles */
 .table_description {
   font-size: 14px;
   color: #555;
   text-align: left;
 }
+
+/* Last Modified Styles */
 .lastmodified {
   font-size: 14px;
   color: #555;
   text-align: left;
 }
 
-
-
+/* Responsive Styles */
 @media (max-width: 768px) {
 
   .table1 {
-    
     display: table;
   }
+
   .table2 {
-    
     display: none;
-    
   }
+  
 }
-  
-  
-  
