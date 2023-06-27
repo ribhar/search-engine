@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import style from "../Css/Search.module.css";
 
+// SearchandSort component
 const SearchandSort = ({ setSearchTerm, setSortBy, sortBy }) => {
+  // State for the search input value
   const [search, setSearch] = useState("");
+
+  // Handle search input change
   const handleSearch = (event) => {
     setSearch(event.target.value);
   };
 
+  // Handle sort by select change
   const handleSortBy = (event) => {
     setSortBy(event.target.value);
   };
@@ -14,6 +19,7 @@ const SearchandSort = ({ setSearchTerm, setSortBy, sortBy }) => {
   return (
     <div className={style.container}>
       <div className={style.search_container}>
+        {/* Search input */}
         <input
           type="text"
           placeholder="Search"
@@ -21,9 +27,14 @@ const SearchandSort = ({ setSearchTerm, setSortBy, sortBy }) => {
           onChange={handleSearch}
           className={style.search_input}
         />
-        <button className={style.search_button} onClick={()=>setSearchTerm(search)}>Search</button>
+
+        {/* Search button */}
+        <button className={style.search_button} onClick={() => setSearchTerm(search)}>
+          Search
+        </button>
       </div>
 
+      {/* Sort by select */}
       <select
         value={sortBy}
         className={style.sortby_input}
