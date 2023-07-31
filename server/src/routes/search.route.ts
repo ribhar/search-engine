@@ -1,5 +1,5 @@
-const express = require('express');
-const searchController = require('../controllers/search.controller');
+import express = require('express');
+import searchController = require('../controllers/search.controller');
 
 const router = express.Router();
 
