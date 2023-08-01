@@ -62,6 +62,12 @@ npm install
 npm start
 ```
 
+5. To run test cases:
+
+```
+npm test
+```
+
 The backend server will be running on http://localhost:8080.
 
 ### Accessing the Application
